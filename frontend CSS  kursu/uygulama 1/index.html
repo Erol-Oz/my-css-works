@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        div {
+            width: 100%;
+            height: 300px;
+            text-align: center;
+            color: orangered;
+        }
+
+        #kaanacademy {
+            font-family: 'Times New Roman', Times, serif;
+            background: url("kaan.jpg") no-repeat;
+            background-size: 100% 300px;
+
+
+        }
+
+        .kaanacademyyazı {
+            font-size: 20px;
+            text-shadow: 2px 2px 5px gray;
+            background-color: lightgreen;
+        }
+        .kurslarımız{
+            float: left;
+            width: 100%;
+            font-weight: bold ;
+            
+        }
+        .kurslarımız1{
+            width: 33.33%;
+            float: left;
+            padding-top: 10px; 
+            
+            
+        }
+        .kurslarımız1:nth-child(1){
+            background: url("kadın.jpg") no-repeat;
+            background-size: 100% 300px;
+        }
+        .kurslarımız1:nth-child(1) p{
+            color: turquoise;
+          
+        }
+        .kurslarımız1:nth-child(2){
+            background: url("yazılım.jpeg") no-repeat;
+            background-size: 100% 300px;
+        }
+        .kurslarımız1:nth-child(2) p{
+            color: green;
+        }
+        .kurslarımız1:nth-child(3){
+            background: url("pc.jpg") no-repeat;
+            background-size: 100% 300px;
+        }
+        .kurslarımız1:nth-child(3) p{
+            color: purple;
+        }
+     
+        #footer{
+            background-color: tomato;
+            height: 330px;
+            clear: both;
+        }
+            
+        
+        #footer p b{
+            text-decoration: underline;
+            font-size: 40px;
+            color: black;
+        }
+        #footer p{
+            color: black;
+            font-size: 30px;
+            text-transform: capitalize;
+            letter-spacing: 3px;
+        }
+        #footer img{
+            
+            border: 5px dashed black;
+            margin-top: 10px;
+            
+        }
+
+        @media screen and (max-width:992px){
+            .kurslarımız1{
+                width: 100%;
+            }
+            #footer{
+                margin-top: 900px;
+            }
+            #footer img{
+                margin-top: 30px;
+            }
+            .kaanacademyyazı{
+                display: block;
+            }
+
+           
+        }
+        #footer{
+            height: 450px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+
+    <div id="kaanacademy">
+        <span class="kaanacademyyazı">
+            Kaan academy yazılım dünyasında çokça kullanılan teknolojileri insanlara anlaşılır bir biçimde aktarmayı
+            amaçlamaktadır.
+        </span>
+    </div>
+
+
+    <div class="kurslarımız">
+
+        <div class="kurslarımız1">
+            Bir kadın kodlama yapıyor.
+            <p>Herkes hayatta istediği şekilde kodlama yapabilir.</p>
+
+        </div>
+
+
+
+        <div class="kurslarımız1">
+            Yazılım için bir laptop yeterlidir.
+            <p>Bu bilgisayarlar olmasa biz ne yapacaktık</p>
+        </div>
+
+
+
+        <div class="kurslarımız1">
+            Güzel bir görsel
+            <p>fotoğraf,telefon ve laptop</p>
+        </div>
+
+    </div>
+    <div id="footer">
+        <img src="kaan.jpg" alt="">
+        <p> <b> Kaan Academy </b> <br> nice insalar yetiştirmeye devam edecektir.</p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+ div .paragraf1{
+        color: red;
+        background: blueviolet;
+     }
+
+     div p{
+        color: cornflowerblue !important;
+        background: none !important;
+     } 
+
+      p,h2,div{
+        color: green;
+     }
+
+    h2{
+        color: red;
+    } 
+
+    
+    div>p{
+        color: red;
+    } */
+
+     #divsizp ~ div {
+        color: red;
+
+    } 
+    
+    #divsizp + div{
+        color: red;
+    }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        Burası divin içi
+        <p class="paragraf1">
+            paragraf1
+        </p>
+
+        <p class="paragraf2">
+            paragraf2
+        </p>
+
+        <p class="paragraf3">
+            paragraf3
+        </p>
+
+    </div>
+        <p id="divsizp">divsiz paragraf</p>
+        <div>
+            <p>sınıfsız divli paragraf</p>
+        </div>
+        <div class="container">
+            <h2>div2</h2>
+        </div>
+</body>
+</html>
